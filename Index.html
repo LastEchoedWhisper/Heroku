@@ -11,14 +11,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
 </head>
-
+<main>
 <body>
-    <div>
+    <div id="title-bg">
         <h2 class="text-center">Welcome to my SendGrid Prototype</h2>
     </div>
     <div style="height : 75px"></div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="Pics/Autumn.jpg"></div>
+      </div>
     <div>
-       <p class="Ubuntu">Sometimes you need random things in your inbox to liven up your day. Well don't worry any longer...
+       <p class="Ubuntu">Sometimes you need random things in your inbox to liven up your day. Well let free of your worries.
         <br></p><p class="Ubuntu">Sign up for my newsletter and I will send you interesting articles, memes, and other fun things you can find
             online.</p>
     </div>
@@ -37,18 +40,6 @@
                   <label for="last_name">Last Name</label>
                 </div>
               </div>
-              <!-- <div class="row">
-                <div class="input-field col s12">
-                  <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                  <label for="disabled">Disabled</label>
-                </div>
-              </div> -->
-              <!-- <div class="row">
-                <div class="input-field col s12">
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-                </div>
-              </div> -->
               <div class="row">
                 <div class="input-field col s12">
                   <input id="email" type="email" class="validate">
@@ -66,8 +57,18 @@
                 </div> -->
               </div>
             </form>
+          <div class="div-inner">
+            <button class="btn waves-effect waves-light z-depth-3" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+            </button>
           </div>
-
+    </div>
+                
 </body>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+</main>
+
+<script type="text/javascript" src="js/materialize.min.js">
+ $(document).ready(function(){
+    $('.parallax').parallax();
+  });</script>
 </html>
